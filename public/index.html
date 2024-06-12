@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Recipe App</h1>
+    </header>
+    
+    <section>
+      <h2>Add New Recipe</h2>
+      <form id="recipe-form">
+        <input type="text" id="title" placeholder="Title" required>
+        <input type="text" id="ingredients" placeholder="Ingredients (comma separated)" required>
+        <input type="text" id="instructions" placeholder="Instructions" required>
+        <input type="number" id="cookingTime" placeholder="Cooking Time (minutes)" required>
+        <button type="submit">Add Recipe</button>
+      </form>
+    </section>
+    
+    <section>
+      <h2>Search Recipe</h2>
+      <form id="search-form">
+        <input type="text" id="search-title" placeholder="Title" required>
+        <button type="submit">Search Recipe</button>
+        <button type="button" id="clear-filter">Clear Filter</button>
+      </form>
+      <div id="search-results"></div>
+    </section>
+    
+    <section>
+      <h2>All Recipes</h2>
+      <table id="recipe-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Ingredients</th>
+            <th>Instructions</th>
+            <th>Cooking Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="update-section" style="display: none;">
+      <h2>Update Recipe</h2>
+      <form id="update-form">
+        <input type="hidden" id="update-id">
+        <input type="text" id="update-title" placeholder="Title" required>
+        <input type="text" id="update-ingredients" placeholder="Ingredients (comma separated)" required>
+        <input type="text" id="update-instructions" placeholder="Instructions" required>
+        <input type="number" id="update-cookingTime" placeholder="Cooking Time (minutes)" required>
+        <button type="submit">Update Recipe</button>
+      </form>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

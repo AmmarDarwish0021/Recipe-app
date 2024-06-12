@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  section {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #555;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  form input, form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  button.update, button.delete {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 80px; /* Ensure same width for both buttons */
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  button.update {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  button.update:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button.delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  button.delete:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
